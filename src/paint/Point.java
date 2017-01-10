@@ -3,6 +3,16 @@ package paint;
 public class Point {
 	private int x;
 	private int y;
+	
+	Point(){
+		
+	}
+	
+	Point(int x, int y){
+		this.x=x;
+		this.y=y;
+	}
+	
 	public int getX() {
 		return x;
 	}
@@ -18,5 +28,13 @@ public class Point {
 	
 	public void show(){
 		System.out.println("점 [x="+this.x+", y="+this.y+"]을 그렸습니다.");
+	}
+	
+	public void show(boolean visible){
+		if(visible == true){
+			show();
+		} else {
+			System.out.println("점 [x="+this.x+", y="+this.y+"]을 지웠습니다.");
+		}
 	}
 }

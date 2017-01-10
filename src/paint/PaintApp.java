@@ -7,6 +7,11 @@ public class PaintApp {
 		pt1.setX(100);
 		pt1.setY(200);
 		pt1.show();
+
+		Point pt2 = new Point(50, 100);
+		pt2.show();
+		pt2.show(false);
+		pt2.show(true);
 	}
 
 }
